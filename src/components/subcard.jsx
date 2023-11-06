@@ -1,5 +1,6 @@
 import { Card, CardActions, CardContent, Button } from "@mui/material";
 import { CheckCircle, Cancel, Block } from "@mui/icons-material";
+import AbsentCard from "./absentcard";
 
 function SubCard() {
   return (
@@ -13,9 +14,10 @@ function SubCard() {
           <Button variant="contained" color="success">
             <CheckCircle />
           </Button>
-          <Button variant="contained" color="error">
+          {/* <Button variant="contained" color="error">
             <Cancel />
-          </Button>
+          </Button> */}
+          <AbsentCard />
           <Button variant="contained" color="warning">
             <Block />
           </Button>
