@@ -5,12 +5,18 @@ import Timetable from "./pages/timetable";
 import Attendance from "./pages/attendance";
 import Subjects from "./pages/subjects";
 import Settings from "./pages/settings";
+import NavMenu from "./components/navmenu";
 
 function App() {
   return (
     <>
       <div>
-        <h1 className="text-4xl font-mono text-center">Attendance Tracker</h1>
+        <div className="display: flex">
+          <NavMenu />
+          <h1 className="text-4xl font-mono m-4 text-center ">
+            Attendance Tracker
+          </h1>
+        </div>
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -18,6 +24,7 @@ function App() {
             <Route path="/attendance" element={<Attendance />} />
             <Route path="/subjects" element={<Subjects />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="*" element={<h1>Not Found</h1>} />
           </Routes>
         </Router>
       </div>
