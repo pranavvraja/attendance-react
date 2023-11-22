@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 import { ttData } from "../data/tt-data.jsx";
 import { timeData } from "../data/table-data.jsx";
 
-function Timetable() {
+function tableLayout() {
   return (
     <>
       <div className="flex justify-evenly m-4 px-40">
@@ -51,4 +51,4 @@ function Timetable() {
   );
 }
 
-export default Timetable;
+export default tableLayout;
